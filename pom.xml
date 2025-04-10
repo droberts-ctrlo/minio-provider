@@ -2,34 +2,51 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>blog.davetheitguy</groupId>
     <artifactId>minio-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>minio-provider</name>
-    <description>minio-provider</description>
-    <url/>
+    <name>MinIO provider</name>
+    <description>Provider to upload and download files to MinIO client</description>
+    
     <licenses>
-        <license/>
+        <license>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
     </licenses>
+    
     <developers>
-        <developer/>
+        <developer>
+            <name>Dave Roberts</name>
+            <email>dave@davetheitguy.blog</email>
+            <roles>
+                <role>developer</role>
+                <role>owner</role>
+            </roles>
+            <organization>Dave The IT Guy</organization>
+            <organizationUrl>https://davetheitguy.blog</organizationUrl>
+            <timezone>UTC</timezone>
+        </developer>
     </developers>
+    
     <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
+        <connection>GIT</connection>
+        <url>https://github.com/droberts-ctrlo/minio-provider.git</url>
     </scm>
+
     <properties>
         <java.version>21</java.version>
         <kotlin.version>1.9.25</kotlin.version>
     </properties>
+    
     <dependencies>
         <dependency>
             <groupId>io.minio</groupId>
