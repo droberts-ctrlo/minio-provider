@@ -1,0 +1,7 @@
+minio:
+  key: none
+  secret: none
+spring:
+  config:
+    activate:
+      on-profile: test
