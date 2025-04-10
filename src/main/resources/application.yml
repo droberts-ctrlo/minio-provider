@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: minio-provider
+---
+spring:
+  config:
+    activate:
+      on-profile: debug
+minio:
+  key: admin2
+  secret: pa55w0rd
