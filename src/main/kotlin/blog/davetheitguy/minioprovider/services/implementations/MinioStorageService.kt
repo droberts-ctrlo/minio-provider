@@ -3,10 +3,12 @@ package blog.davetheitguy.minioprovider.services.implementations
 import blog.davetheitguy.minioprovider.config.MinioConfig
 import blog.davetheitguy.minioprovider.services.StorageService
 import io.minio.*
+import org.springframework.context.annotation.Profile
 import org.springframework.stereotype.Service
 import java.io.InputStream
 
 @Service
+@Profile("!test")
 class MinioStorageService(
     private val minioConfig: MinioConfig,
     private val minioClient: MinioClient
